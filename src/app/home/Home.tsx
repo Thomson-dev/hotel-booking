@@ -1,12 +1,11 @@
 import React from "react";
 import Services from "./Services";
-import NavBar from "@/components/NavBar";
+import Hero from "@/components/Hero";
 
 const Home = () => {
   return (
-    <div>
-      {/* <Services /> */}
-      <NavBar />
+    <div className="">
+      <Hero />
     </div>
   );
 };
