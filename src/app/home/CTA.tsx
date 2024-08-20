@@ -1,13 +1,8 @@
 import React from "react";
-import about from "../assert/about1-1.jpg";
-import about2 from "../assert/about2-2.jpg";
 import Image from "next/image";
-import { IoIosPlay } from "react-icons/io";
-import icon from "../assert/exp-icon.png";
 import { FaCheckCircle } from "react-icons/fa";
-import swimmung from "../assert/swimming.png";
 
-import bulb from "../assert/bulb.png";
+import bulb from "/asset/bulb.png";
 
 const CTA = () => {
   return (
@@ -35,7 +30,7 @@ const CTA = () => {
               <Image
                 alt="bulb"
                 className="max-w-[65px] text-[#222222] "
-                src={bulb}
+                src="/assets/bulb.png"
               />
               <h4 className="gilda-display-regular    max-w-[10rem]  text-[#222222] text-2xl">
                 The Best Lighting
@@ -46,7 +41,7 @@ const CTA = () => {
               <Image
                 alt="swimmuig"
                 className="max-w-[74px] text-[#222222] "
-                src={swimmung}
+                src="/assets/swimming.png"
               />
               <h4 className="gilda-display-regular    text-[#222222] text-2xl max-w-[10rem] ">
                 The Best Swiming
@@ -87,16 +82,16 @@ const CTA = () => {
           <div className="border w-9 h-[16rem] bg-[#aa8453]  "></div>
           <div className="relative">
             <Image
-              src={about}
+              src="/about1-1.jpg"
               alt=""
               className="max-w-[402px] w-full h-[520px] object-cover"
             />
             <div className="absolute -bottom-[10rem] xl:-left-[10rem] -left-[2rem] sm:-left-[8rem]
              lg:-left-16 sm:right-[20rem]   ">
-              <Image src={about2} alt="" className="max-w-[300px] h-auto" />
+              <Image src="/about2-2.jpg" alt="" className="max-w-[300px] h-auto" />
             </div>
             <div className="sm:w-[60%] w-[65%] absolute xl:top-[22rem]  xl:left-[6rem] left-[7rem] -bottom-[7rem]  sm:top-[20rem]  sm:left-[17rem] lg:right-3 animated-element bg-[#090909]  px-2 z-30 h-64 flex justify-center flex-col text-white items-center ">
-              <Image src={icon} alt="" className="max-w-full  h-auto" />
+              <Image src="exp-icon.png" alt="" className="max-w-full  h-auto" />
               <h1 className="mt-5">Luxury Room</h1>
               <p className="text-center  text-sm">
                 Donec in quis the asd pellentesque velit. Donec id velit arcu
