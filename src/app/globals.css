@@ -3,3 +3,108 @@
 @tailwind utilities;
 
 
+.cta-hero {
+    position: relative;
+    padding: 10px 20px;
+    border: 1px solid white;
+    overflow: hidden;
+    /* Ensure the hover effect doesn't exceed the boundary */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-hero span {
+    position: relative;
+    /* Ensure the text stays above the overlay */
+    z-index: 2;
+    /* This ensures the text is above the hover effect */
+}
+
+.hover-effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #aa8453;
+    z-index: 1;
+    /* This ensures the hover effect is behind the text */
+    transition: all 0.5s ease-in-out;
+}
+
+.cta-hero:hover .hover-effect {
+    width: 100%;
+    left: 0;
+}
+
+.cta-hero:hover {
+    border-color: #aa8453;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-bullet {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pagination-bullet.active {}
+
+.pagination-bullet.active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+}
+
+.mid-box div {
+    position: relative;
+}
+
+.mid-box div:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #aa8453;
+    width: 5px;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.bottom-box div {
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bottom-box div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #aa8453;
+    transition: all 0.4s ease-in-out;
+    z-index: 98;
+    width: 0;
+}
+
+.bottom-box div:hover::before {
+    width: 100%;
+    left: 0;
+}
