@@ -29,6 +29,8 @@ const CTA = () => {
             <div className="flex gap-5">
               <Image
                 alt="bulb"
+                width={100}
+                height={100}
                 className="max-w-[65px] text-[#222222] "
                 src="/assets/bulb.png"
               />
@@ -40,6 +42,8 @@ const CTA = () => {
             <div className="flex gap-5">
               <Image
                 alt="swimmuig"
+                width={100}
+                height={100}
                 className="max-w-[74px] text-[#222222] "
                 src="/assets/swimming.png"
               />
@@ -82,16 +86,18 @@ const CTA = () => {
           <div className="border w-9 h-[16rem] bg-[#aa8453]  "></div>
           <div className="relative">
             <Image
-              src="/about1-1.jpg"
+              src="/assets/about1-1.jpg"
               alt=""
+              width={402}
+              height={520}
               className="max-w-[402px] w-full h-[520px] object-cover"
             />
             <div className="absolute -bottom-[10rem] xl:-left-[10rem] -left-[2rem] sm:-left-[8rem]
              lg:-left-16 sm:right-[20rem]   ">
-              <Image src="/about2-2.jpg" alt="" className="max-w-[300px] h-auto" />
+              <Image height={100} width={300} src="/assets/about2-2.jpg" alt="" className="max-w-[300px] h-auto" />
             </div>
             <div className="sm:w-[60%] w-[65%] absolute xl:top-[22rem]  xl:left-[6rem] left-[7rem] -bottom-[7rem]  sm:top-[20rem]  sm:left-[17rem] lg:right-3 animated-element bg-[#090909]  px-2 z-30 h-64 flex justify-center flex-col text-white items-center ">
-              <Image src="exp-icon.png" alt="" className="max-w-full  h-auto" />
+              <Image height={100} width={100} src="/assets/exp-icon.png" alt="" className="max-w-full  h-auto" />
               <h1 className="mt-5">Luxury Room</h1>
               <p className="text-center  text-sm">
                 Donec in quis the asd pellentesque velit. Donec id velit arcu

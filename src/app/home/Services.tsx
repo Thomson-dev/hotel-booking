@@ -1,17 +1,11 @@
 import React from "react";
-import {
-  FaCoffee,
-  FaConciergeBell,
-  FaParking,
-  FaShuttleVan,
-  FaSwimmer,
-} from "react-icons/fa";
-import roomService from "@/app/assert/hotel-service.png";
-import delivery from "@/app/assert/delivery.png";
-import vehicle from "@/app/assert/vehicle.png";
-import breakfast from "@/app/assert/croissant.png";
-import swimming from "@/app/assert/swimming.png";
-import lastImage from "@/app/assert/2.jpg";
+
+// import roomService from "/assets/hotel-service.png";
+import delivery from "/assets/delivery.png";
+import vehicle from "/assets/vehicle.png";
+import breakfast from "/assets/croissant.png";
+import swimming from "/assets/swimming.png";
+import lastImage from "/assets/2.jpg";
 import Image from "next/image";
 
 const services = [
@@ -20,39 +14,39 @@ const services = [
     title: "Room Service",
     description:
       "Orci varius natoque penatibus magnis ders disney parturient ridiculus",
-    icon: roomService,
+    icon: "/assets/hotel-service.png",
   },
   {
     id: 2,
     title: "Swimming Pool",
     description:
       "Orci varius natoque penatibus magnis ders disney parturient ridiculus",
-    icon: swimming,
+    icon: '/assets/swimming.png',
   },
   {
     id: 3,
     title: "Parking Space",
     description:
       "Orci varius natoque penatibus magnis ders disney parturient ridiculus",
-    icon: vehicle,
+    icon: '/assets/vehicle.png ',
   },
   {
     id: 4,
     title: "Breakfast",
     description:
       "Orci varius natoque penatibus magnis ders disney parturient ridiculus",
-    icon: breakfast,
+    icon: '/assets/croissant.png',
   },
   {
     id: 5,
     title: "Pick Up & Drop",
     description:
       "Orci varius natoque penatibus magnis ders disney parturient ridiculus",
-    icon: delivery,
+    icon: '/assets/delivery.png',
   },
   {
     id: 6,
-    icon: lastImage,
+    icon: '/assets/2.jpg',
   },
 ];
 
@@ -74,12 +68,22 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className= {`border  px-[1.5rem] text-[#aa8453]  bg-white cursor-pointer ${service.id ==6 ? 'pt-4': 'py-[4rem]'}`}
+              className={`border  px-[1.5rem] text-[#aa8453]  bg-white cursor-pointer ${
+                service.id == 6 ? "pt-4" : "py-[4rem]"
+              }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center  gap-8">
                 <Image
                   src={service.icon}
-                  className= {` ${service.id ==  6 ? 'max-w-full hover:scale-110 ease-in ': 'max-w-[70px]'}`}
+                  width={150} height={150}
+                  className={`
+                     ${
+                    
+                    service.id == 6
+                       ? "w-full hover:scale-110  ease-in "
+                       : "max-w-[80px]"
+                  }
+                    `}
                   alt={service.title || ""}
                 />
                 <div className="">
