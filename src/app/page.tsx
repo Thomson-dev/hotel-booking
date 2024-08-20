@@ -1,4 +1,4 @@
-import Services from "@/components/Services";
+
 import React from "react";
 import Home from "./home/Home";
 
