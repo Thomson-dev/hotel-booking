@@ -48,8 +48,8 @@
 
 .pagination-bullet {
     position: relative;
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: white;
     margin: 0 10px;
@@ -64,8 +64,8 @@
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 1px solid white;
     transform: translate(-50%, -50%);
 }
@@ -108,3 +108,28 @@
     width: 100%;
     left: 0;
 }
+
+.desk-nav-items a {
+    cursor: pointer;
+    position: relative;
+}
+
+.desk-nav-items a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #aa8453;
+    bottom: 0;
+    transition: width .3s ease-in-out;
+}
+
+.desk-nav-items a:hover::before {
+    width: 100%;
+}
+  a[aria-current="page"] {
+      content: "";
+      border-bottom: 5px solid #aa8453;
+      border-radius: 5px;
+  }

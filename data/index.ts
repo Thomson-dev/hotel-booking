@@ -28,17 +28,20 @@ const services = [
 export const heroTexts = [
   {
     id: 1,
-    text: "Make the most out of your vacation",
+    text_t: "Make the most ",
+    text_b: "out of your vacation",
     src: "/assets/carousel-img-1.jpg",
   },
   {
     id: 2,
-    text: "Enjoy life with the great moments",
+    text_t: "Enjoy life with",
+    text_b: "the great moments",
     src: "/assets/carousel-img-2.jpg",
   },
   {
     id: 3,
-    text: "Explore luxury like never before",
+    text_t: `Explore luxury`,
+    text_b: `like never before`,
     src: "/assets/carousel-img-3.jpg",
   },
 ];

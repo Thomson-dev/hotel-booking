@@ -29,7 +29,7 @@ const HeroSlider = () => {
         }}
         modules={[Autoplay]}
         autoplay={{
-          delay: 3000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -43,7 +43,7 @@ const HeroSlider = () => {
         loop={true}
         className="mySwiper"
       >
-        {heroTexts.map(({ id, text, src }, index) => (
+        {heroTexts.map(({ id, text_t, text_b, src }, index) => (
           <SwiperSlide className="w-screen h-screen relative" key={id}>
             <div className="overlay absolute w-screen h-screen bg-[rgba(0,0,0,0.6)]"></div>
 
@@ -53,11 +53,13 @@ const HeroSlider = () => {
               animate={activeIndex === index ? "visible" : "hidden"}
               variants={slideTextVariants}
             >
-              <p className="uppercase text-white text-md text-center">
+              <p className="uppercase text-white text-md lg:text-2xl text-center">
                 Unique place and luxury hotel
               </p>
-              <h1 className="uppercase text-white text-md text-[2rem] text-center mb-5">
-                {text}
+              <h1 className="uppercase text-white text-md text-[2rem] text-center mb-5 lg:text-5xl">
+                <span className="mb-10">{text_t}</span>
+                <br />
+                <span>{text_b}</span>
               </h1>
               <a className="cta-hero px-5 py-4 border border-white bg-transparent text-white text-lg uppercase">
                 <div className="hover-effect"></div>

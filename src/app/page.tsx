@@ -1,6 +1,6 @@
 import Services from "@/components/Services";
 import React from "react";
-import Home from "./home/Home";
+import Home from "./home/page";
 
 function page() {
   return (

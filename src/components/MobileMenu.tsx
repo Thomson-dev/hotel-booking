@@ -16,14 +16,14 @@ type MyProps = {
   onClick?: () => void;
 };
 
-const MobileMenu: React.FC<MyProps> = ({ isOpen, onClick }) => {
+const MobileMenu = ({ isOpen, onClick }: MyProps) => {
   return (
     <div
-      className={`menu-mobile w-full  h-full flex z-[200] absolute top-0 ${
-        !isOpen && "translate-x-full"
-      }  transition-all`}
+      className={`menu-mobile w-screen  h-screen flex z-[200] absolute top-0
+        ${isOpen ? "translate-x-0" : "translate-x-full"}
+          transition-all`}
     >
-      <div className="overlay-side w-[20%] lg: h-full bg-[rgba(0,0,0,0.7)]"></div>
+      <div className="overlay-side w-[20%] max-w-[calc(100%-500px)] lg: h-full bg-[rgba(0,0,0,0.7)]"></div>
 
       <div className="menu-main bg-[#222] w-[80%] h-full grid max-w-[500px] ml-auto">
         <div className="upper-box flex justify-between items-center px-[20px] py-[10px] border-b-[1px] border-[rgba(255,255,255,.1)]">

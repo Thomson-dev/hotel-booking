@@ -1,8 +1,16 @@
+
+
+
+
+
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import { useState } from "react";
 
 const barlow = Barlow({ subsets: ["latin"], weight: "400" });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>{children}</body>
+      <body className={barlow.className}>
+        {children}
+      </body>
     </html>
   );
 }
