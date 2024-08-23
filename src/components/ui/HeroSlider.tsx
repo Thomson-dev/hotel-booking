@@ -61,7 +61,7 @@ const HeroSlider = () => {
                 <br />
                 <span>{text_b}</span>
               </h1>
-              <a className="cta-hero px-5 py-4 border border-white bg-transparent text-white text-lg uppercase">
+              <a className="cta-hero px-[20px] py-[10px] border border-white bg-transparent text-white text-lg uppercase">
                 <div className="hover-effect"></div>
                 <span>rooms & suites</span>
               </a>

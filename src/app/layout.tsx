@@ -1,15 +1,9 @@
-
-
-
-
-
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
+import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import { useState } from "react";
 
 const barlow = Barlow({ subsets: ["latin"], weight: "400" });
+const barlowCondensd = Barlow_Condensed({ subsets: ["latin"], weight: "400" });
 
 
 export const metadata: Metadata = {

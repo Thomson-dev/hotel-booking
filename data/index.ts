@@ -66,3 +66,20 @@ export const contactInfo = [
     icon: "LuAlarmClock",
   },
 ];
+export const call_to_action = [
+  {
+    id:1,
+    head: "easy & free transport",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
+  },
+  {
+    id:2,
+    head: "clean & fresh food",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
+  },
+  {
+    id:3,
+    head: "play ground & swimming pool",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
+  },
+];

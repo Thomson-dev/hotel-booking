@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('https: //fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet') format('woff2');
+        /* Example URL */
+    }
+}
 .cta-hero {
     position: relative;
-    padding: 10px 20px;
-    border: 1px solid white;
     overflow: hidden;
     /* Ensure the hover effect doesn't exceed the boundary */
     text-decoration: none;
@@ -128,8 +135,14 @@
 .desk-nav-items a:hover::before {
     width: 100%;
 }
-  a[aria-current="page"] {
-      content: "";
-      border-bottom: 5px solid #aa8453;
-      border-radius: 5px;
-  }
+
+a[aria-current="page"] {
+    content: "";
+    border-bottom: 5px solid #aa8453;
+    border-radius: 5px;
+}
+
+.icon-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    ;
+}

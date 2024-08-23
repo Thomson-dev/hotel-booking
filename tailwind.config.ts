@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         orange: "#aa8453",
       },
+      fontFamily: {
+        serif: ["Gilda Display", "serif"],
+      },
     },
   },
   plugins: [

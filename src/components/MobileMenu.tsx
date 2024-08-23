@@ -23,7 +23,7 @@ const MobileMenu = ({ isOpen, onClick }: MyProps) => {
         ${isOpen ? "translate-x-0" : "translate-x-full"}
           transition-all`}
     >
-      <div className="overlay-side w-[20%] max-w-[calc(100%-500px)] lg: h-full bg-[rgba(0,0,0,0.7)]"></div>
+      <div className="overlay-side w-[20%] max-w-[calc(100%-500px)] lg: h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-l"></div>
 
       <div className="menu-main bg-[#222] w-[80%] h-full grid max-w-[500px] ml-auto">
         <div className="upper-box flex justify-between items-center px-[20px] py-[10px] border-b-[1px] border-[rgba(255,255,255,.1)]">
