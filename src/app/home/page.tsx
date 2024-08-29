@@ -1,15 +1,18 @@
 import React from "react";
 import Services from "./Services";
+import CTA from "./CTA";
 import Hero from "@/components/Hero";
-import EscapeCta from "@/components/EscapeCta";
-import HotelBooking from "@/components/HotelBooking";
+import BookingSection from "@/components/BookingSection";
+import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="w-screen overflow-x-hidden">
       <Hero />
-      <EscapeCta />
-      <HotelBooking/>
+      <CTA />
+      <Services />
+      <BookingSection />
+      <Testimonials />
     </div>
   );
 };

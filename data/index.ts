@@ -68,18 +68,44 @@ export const contactInfo = [
 ];
 export const call_to_action = [
   {
-    id:1,
+    id: 1,
     head: "easy & free transport",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
   },
   {
-    id:2,
+    id: 2,
     head: "clean & fresh food",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
   },
   {
-    id:3,
+    id: 3,
     head: "play ground & swimming pool",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt dolore magna aliqua.",
+  },
+];
+export const testimonial_data = [
+  {
+    id: 1,
+    name: "jina nillson",
+    title: "founder of webflex",
+    src:"/assets/test-img-1.png",
+    details:
+    "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
+  },
+  {
+    id: 2,
+    name: "Donald Browfish",
+    title: "founder of webflex",
+    src:"/assets/test-img-2.png",
+    details:
+    "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
+  },
+  {
+    id: 3,
+    name: "Robotor doses",
+    title: "founder of webflex",
+    src:"/assets/test-img-3.png",
+    details:
+      "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
   },
 ];

@@ -56,14 +56,14 @@ const HeroSlider = () => {
               <p className="uppercase text-white text-md lg:text-2xl text-center">
                 Unique place and luxury hotel
               </p>
-              <h1 className="uppercase text-white text-md text-[2rem] text-center mb-5 lg:text-5xl">
+              <h1 className="gilda-display-regular uppercase text-white text-md text-[2rem] text-center mb-5 lg:text-5xl">
                 <span className="mb-10">{text_t}</span>
                 <br />
                 <span>{text_b}</span>
               </h1>
               <a className="cta-hero px-[20px] py-[10px] border border-white bg-transparent text-white text-lg uppercase">
                 <div className="hover-effect"></div>
-                <span>rooms & suites</span>
+                <span className="barlow-condensed-regular">rooms & suites</span>
               </a>
             </motion.div>
             <img
