@@ -88,24 +88,53 @@ export const testimonial_data = [
     id: 1,
     name: "jina nillson",
     title: "founder of webflex",
-    src:"/assets/test-img-1.png",
+    src: "/assets/test-img-1.png",
     details:
-    "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
+      "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
   },
   {
     id: 2,
     name: "Donald Browfish",
     title: "founder of webflex",
-    src:"/assets/test-img-2.png",
+    src: "/assets/test-img-2.png",
     details:
-    "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
+      "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
   },
   {
     id: 3,
     name: "Robotor doses",
     title: "founder of webflex",
-    src:"/assets/test-img-3.png",
+    src: "/assets/test-img-3.png",
     details:
       "Upon they're seasons green day beastwithout form man be firmament years shallthe appear moveth signs had.",
+  },
+];
+export const news_data = [
+  {
+    id: 1,
+    img: "news-1",
+    day: "dec",
+    date: 20,
+    writer: "Jonica Michel",
+    writerImg: "pro-1",
+    desc: "Restore Lighting Design in The Hotel",
+  },
+  {
+    id: 2,
+    img: "news-2",
+    day: "nov",
+    date: 12,
+    writer: "jonica michel",
+    writerImg: "pro-1",
+    desc: "Swimming Benefits is Good For Your Health",
+  },
+  {
+    id: 3,
+    img: "news-3",
+    day: "aug",
+    date: 16,
+    writer: "jonica michel",
+    writerImg: "pro-1",
+    desc: "Available Now Health Club For Your Fitness ",
   },
 ];

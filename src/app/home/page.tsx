@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import Hero from "@/components/Hero";
 import BookingSection from "@/components/BookingSection";
 import Testimonials from "@/components/Testimonials";
+import LatestNews from "@/components/LatestNews";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Services />
       <BookingSection />
       <Testimonials />
+      <LatestNews />
     </div>
   );
 };
