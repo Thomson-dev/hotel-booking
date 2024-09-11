@@ -52,7 +52,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="banner py-[2rem]  mt-[10rem] ">
+    <div className="banner py-[4rem]  mt-[10rem] ">
       <div className="md:max-w-[1250px] w-[95%] mx-auto">
         <div className="h-44 flex justify-center flex-col items-center ">
           <span className="barlow-condensed-regular uppercase tracking-[0.3rem] text-base text-[#797878]">
@@ -68,8 +68,8 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`border  px-[1.5rem] text-[#aa8453]  bg-white cursor-pointer ${
-                service.id == 6 ? "pt-4" : "py-[4rem]"
+              className={`px-[1.5rem]    ${
+                service.id == 6 ? "pt-4" : "py-[3.5rem]  border  px-[1.5rem] text-[#aa8453]  bg-white cursor-pointer"
               }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center  gap-8">

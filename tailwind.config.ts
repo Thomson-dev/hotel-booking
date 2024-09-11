@@ -16,6 +16,13 @@ const config: Config = {
       colors: {
         orange: "#aa8453",
       },
+
+      screens: {
+        'xs': '600px',
+        '3xl': '2000px',
+        
+     
+      },
     },
   },
   plugins: [

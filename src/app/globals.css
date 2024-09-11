@@ -118,7 +118,7 @@
   }
 
   .banner{
-    background: url('/app/assert/home.png');
+    background: url('../../public/assets/home.png');
     width: 100%;
   
     background-color: #F8F5F0;

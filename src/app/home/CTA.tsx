@@ -19,7 +19,7 @@ const CTA = () => {
             Activities To All Visitors
           </h2>
 
-          <p className=" text-base text-[#aa8453] font-semibold xl:max-w-lg max-w-full leading-7 mt-10">
+          <p className=" text-lg text-[#aa8453] font-semibold xl:max-w-lg max-w-full leading-7 mt-10">
             San Francisco has hills with views, the coast, excellent food & has
             been voted the happiest, healthiest and fittest city in the States
             many times.
@@ -96,10 +96,10 @@ const CTA = () => {
              lg:-left-16 sm:right-[20rem]   ">
               <Image height={100} width={300} src="/assets/about2-2.jpg" alt="" className="max-w-[300px] h-auto" />
             </div>
-            <div className="sm:w-[60%] w-[65%] absolute xl:top-[22rem]  xl:left-[6rem] left-[7rem] -bottom-[7rem]  sm:top-[20rem]  sm:left-[17rem] lg:right-3 animated-element bg-[#090909]  px-2 z-30 h-64 flex justify-center flex-col text-white items-center ">
+            <div className="sm:w-[60%] w-[65%] absolute xl:top-[22rem]  xl:left-[6rem] left-[7rem] -bottom-[7rem]  sm:top-[20rem]  sm:left-[17rem] lg:left-[5rem] animated-element bg-[#090909]  px-2 z-30 h-64 flex justify-center flex-col text-white items-center ">
               <Image height={100} width={100} src="/assets/exp-icon.png" alt="" className="max-w-full  h-auto" />
               <h1 className="mt-5">Luxury Room</h1>
-              <p className="text-center  text-sm">
+              <p className="text-center  text-base">
                 Donec in quis the asd pellentesque velit. Donec id velit arcu
                 posuere blane.
               </p>
