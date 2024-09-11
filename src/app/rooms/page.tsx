@@ -1,12 +1,9 @@
 import React from 'react'
-import Room from './Room'
 
-const pages = () => {
+const page = () => {
   return (
-    <div>
-        <Room/>
-    </div>
+    <div>page</div>
   )
 }
 
-export default pages
+export default page
