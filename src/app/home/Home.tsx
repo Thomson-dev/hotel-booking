@@ -8,7 +8,7 @@ import Hospitality from "./Hospitality";
 const Home = () => {
   return (
     <div className="">
-      {/* <Hero /> */}
+      <Hero />
         <CTA/>
       <Services />
       <Price/>

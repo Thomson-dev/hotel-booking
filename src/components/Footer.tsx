@@ -58,7 +58,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#222222] flex justify-between flex-col mt-[5rem]  min-h-[30rem]">
+    <div className="bg-[#222222] flex justify-between flex-col mt-[5rem] py-3 min-h-[30rem]">
       <div className="grid mt-[7rem] lg:grid-cols-4 gap-20 max-w-[1200px]  w-[95%] mx-auto text-white md:grid-cols-2 grid-cols-1 ">
         <div className="space-y-8">
           <Image src="/assets/logo-2.png" width={150} height={150} alt="" />
